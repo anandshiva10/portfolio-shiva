@@ -53,6 +53,7 @@
 }
 
 .home__img {
+  /* Your existing styles */
   background: url(../../assets/profile.jpeg);
   background-repeat: no-repeat;
   background-position: center;
@@ -66,7 +67,11 @@
   position: relative;
   overflow: hidden;
   filter: grayscale(25%);
+  
+  /* Add this for a smoother movement effect */
+  transition: transform 0.1s ease-out;
 }
+
 
 .home__img::before {
   content: "";
@@ -259,7 +264,7 @@
   }
   
   .home__scroll {
-    bottom: 2rem;
+    bottom: 4rem;
   }
 }
 

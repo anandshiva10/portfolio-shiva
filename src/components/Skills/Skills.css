@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 .skills__container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -17,7 +18,7 @@
   justify-content: center;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
-  cursor: default;
+  cursor: pointer;
   margin: 0 auto;
 }
 
@@ -36,6 +37,10 @@
   font-size: var(--small-font-size);
   color: var(--title-color);
   font-weight: var(--font-medium);
+}
+
+.section__title{
+  font-family: 'outfit';
 }
 
 @media screen and (max-width: 992px) {
