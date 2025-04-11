@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 .home {
   display: flex;
-  height: 100vh;
+  /* height: 100vh; */
   align-items: center;
   position: relative;
   overflow: hidden;
@@ -54,7 +54,7 @@
 
 .home__img {
   /* Your existing styles */
-  background: url(../../assets/profile.jpeg);
+  background: url(../../assets/profile.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -66,7 +66,7 @@
   animation: profile__animate 8s ease-in-out infinite 1s;
   position: relative;
   overflow: hidden;
-  filter: grayscale(25%);
+  /* filter: grayscale(90%); */
   
   /* Add this for a smoother movement effect */
   transition: transform 0.1s ease-out;

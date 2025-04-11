@@ -121,6 +121,7 @@ img{
   display: block;
   font-size: var(--small-font-size);
   margin-bottom: 4rem;
+  font-weight: var(--font-semi-bold);
 }
 
 .section__title, .section__subtitle{
