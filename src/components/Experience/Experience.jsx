@@ -79,8 +79,8 @@ const Experience = () => {
 
   return (
     <section className="experience section" id="experience">
-      <h2 className="section__title">Experience</h2>
-      <span className="section__subtitle">Career Milestones & Learning Paths</span>
+      <h2 data-aos="fade-in" className="section__title">Experience</h2>
+      <span data-aos="fade-in" className="section__subtitle">Career Milestones & Learning Paths</span>
 
       <div className="experience__container container">
         <div className="experience__sections">
@@ -92,7 +92,7 @@ const Experience = () => {
             >
               {item.position === "left" ? (
                 <>
-                  <div className="experience__content">
+                  <div data-aos="fade-right" className="experience__content">
                     <h3 className="experience__title">{item.title}</h3>
                     <span className="experience__company">{item.organization}</span>
                     <div className="experience__calendar">
@@ -122,7 +122,7 @@ const Experience = () => {
                     {index !== timelineData.length - 1 && <span className="experience__line"></span>}
                   </div>
 
-                  <div className="experience__content">
+                  <div data-aos="fade-left" className="experience__content">
                     <h3 className="experience__title">{item.title}</h3>
                     <span className="experience__company">{item.organization}</span>
                     <div className="experience__calendar">

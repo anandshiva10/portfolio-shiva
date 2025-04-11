@@ -23,9 +23,9 @@ const Skills = () => {
   ];
 
   return (
-    <section className="skills section" id="skills">
-      <h2 className="section__title">Skills</h2>
-      <span className="section__subtitle">Languages & Frameworks</span>
+    <section  className="skills section" id="skills">
+      <h2 data-aos="fade-in" className="section__title">Skills</h2>
+      <span data-aos="fade-in" className="section__subtitle">Languages & Frameworks</span>
 
       <div className="skills__container container">
         {skillsData.map((skill, index) => (

@@ -3,9 +3,9 @@ import { ReactTyped } from 'react-typed';
 import resumePDF from '../../assets/Shiva_Anand_Resume.pdf'; 
 const Data = () => {
   return (
-    <div className="home__data">
+    <div data-aos="fade-in" className="home__data">
       <p className='home__greeting'>Hi, This is</p>
-      <h1 className="home__title">SHIVA ANAND GOGULA</h1>
+      <h1  className="home__title">SHIVA ANAND GOGULA</h1>
       <h3 className='home__subtitle'>
         <ReactTyped
           strings={[
