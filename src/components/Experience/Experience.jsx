@@ -28,10 +28,10 @@ const Experience = () => {
       details: null,
       position: "left", // left side of timeline
       responsibilities: [
-        "Developed SAS programs to generate datasets for public health indicators, ensuring data accuracy and reproducibility.",
-        "Assisted in obtaining, preparing, and integrating data for CHIRE and CHIRS dashboards, enhancing data-driven decision-making.",
-        "Created comparison check files to identify data discrepancies or drastic trend changes, ensuring reliable reporting.",
-        "Conducted validation and quality assurance checks on datasets and dashboards to maintain data integrity."
+        "Analyze epidemiological datasets (SPARCS, Vital Statistics, BRFSS, and other programmatic data) to identify trends and support disease surveillance initiatives for the CHIRE, CHIRs, and Perinatal ZIP Code Data Profile dashboards",
+        "Develop and optimize SAS programs to prepare datasets for various public health indicators, ensuring accuracy and reproducibility for public health reporting",
+        "Source and validate primary data from official health databases (e.g., CDC, state sources), identifying discrepancies and trend changes.",
+        " Collaborate with epidemiologists and other public health professionals to interpret complex health data and develop actionable insights"
       ]
     },
     {
@@ -92,7 +92,7 @@ const Experience = () => {
             >
               {item.position === "left" ? (
                 <>
-                  <div data-aos="fade-right" className="experience__content">
+                  <div data-aos="fade-right" className="experience__content custom-fade-right">
                     <h3 className="experience__title">{item.title}</h3>
                     <span className="experience__company">{item.organization}</span>
                     <div className="experience__calendar">
@@ -106,7 +106,7 @@ const Experience = () => {
                     )}
                   </div>
 
-                  <div>
+                  <div data-aos="fade-down" >
                     <span className="experience__rounder"></span>
                     {index !== timelineData.length - 1 && <span className="experience__line"></span>}
                   </div>
@@ -117,12 +117,12 @@ const Experience = () => {
                 <>
                   <div></div>
                   
-                  <div>
+                  <div data-aos="fade-down">
                     <span className="experience__rounder"></span>
                     {index !== timelineData.length - 1 && <span className="experience__line"></span>}
                   </div>
 
-                  <div data-aos="fade-left" className="experience__content">
+                  <div data-aos="fade-left" className="experience__content custom-fade-left">
                     <h3 className="experience__title">{item.title}</h3>
                     <span className="experience__company">{item.organization}</span>
                     <div className="experience__calendar">

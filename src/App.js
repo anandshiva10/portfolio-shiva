@@ -15,6 +15,7 @@ function App() {
     AOS.init({
       duration: 1500, // Animation duration in ms
       once: true,     // Whether animation should happen only once
+      disable: 'mobile'
     });
   }, []);
 
