@@ -23,7 +23,7 @@ const Contact = () => {
             <div data-aos="fade-up" className="contact__card">
               <i className="uil uil-envelope contact__card-icon"></i>
               <h3 className="contact__card-title">Email</h3>
-              <p className="contact__card-data">sgogula@albany.edu</p>
+              <p className="contact__card-data">shivaanandgsa@gmail.com</p>
             </div>
 
             <div data-aos="fade-left" className="contact__card">

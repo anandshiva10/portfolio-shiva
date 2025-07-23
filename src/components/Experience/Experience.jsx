@@ -21,12 +21,26 @@ const Experience = () => {
   // Combined timeline data (both work experience and education)
   const timelineData = [
     {
-      title: "Student Assistant",
-      organization: "NYS Department of Health",
-      period: "August 2024 - Present",
+      title: "IT Specialist 2",
+      organization: "NYSITS (HSEC)",
+      period: "May 2025 - Present",
       location: "Albany, New York",
       details: null,
       position: "left", // left side of timeline
+      responsibilities: [
+        "Analyze epidemiological datasets (SPARCS, Vital Statistics, BRFSS, and other programmatic data) to identify trends and support disease surveillance initiatives for the CHIRE, CHIRs, and Perinatal ZIP Code Data Profile dashboards",
+        "Develop and optimize SAS programs to prepare datasets for various public health indicators, ensuring accuracy and reproducibility for public health reporting",
+        "Source and validate primary data from official health databases (e.g., CDC, state sources), identifying discrepancies and trend changes.",
+        " Collaborate with epidemiologists and other public health professionals to interpret complex health data and develop actionable insights"
+      ]
+    },
+    {
+      title: "Student Assistant",
+      organization: "NYS Department of Health",
+      period: "August 2024 - May 2025",
+      location: "Albany, New York",
+      details: null,
+      position: "right", // left side of timeline
       responsibilities: [
         "Analyze epidemiological datasets (SPARCS, Vital Statistics, BRFSS, and other programmatic data) to identify trends and support disease surveillance initiatives for the CHIRE, CHIRs, and Perinatal ZIP Code Data Profile dashboards",
         "Develop and optimize SAS programs to prepare datasets for various public health indicators, ensuring accuracy and reproducibility for public health reporting",
@@ -40,7 +54,7 @@ const Experience = () => {
       period: "Aug 2023 - May 2025",
       location: "Albany, NY",
       details: "CGPA: 3.9/4.0",
-      position: "right", // right side of timeline
+      position: "left", // right side of timeline
       responsibilities: [
         "Pursued advanced coursework in Topological Data Analysis (TDA), applying topological methods to extract insights from complex datasets",
         "Mastered Applied Statistics fundamentals, including hypothesis testing, regression analysis, and Bayesian methods for predictive modeling and experimental design",
@@ -51,10 +65,10 @@ const Experience = () => {
     {
       title: "Senior Systems Engineer",
       organization: "Infosys Limited",
-      period: "Sep 2020 - Jul 2023",
+      period: "Mar 2021 - Jul 2023",
       location: "Hyderabad, India",
       details: null,
-      position: "left", // left side of timeline
+      position: "right", // left side of timeline
       responsibilities: [
         "Spearheaded migration from legacy JSP/Struts to React Application on AWS, cutting page load time by 40%",
         "Architected Spring Boot microservices to replace monolithic message queue system, processing 3,000+ daily transactions",
@@ -62,10 +76,23 @@ const Experience = () => {
         "Orchestrated database migration from MySQL/WebLogic to PostgreSQL/Tomcat, reducing maintenance costs by 70%"
       ]
     },
+        {
+      title: "Full Stack Developer (FreeLance)",
+      organization: "VSB Infra",
+      period: "June 2020 - Feb 2021",
+      location: "Hyderabad, India",
+      details: null,
+      position: "left", // left side of timeline
+      responsibilities: [
+        "Specialized in Software Engineering and Database Systems with a focus on advanced SQL and systems architecture",
+        "Designed and implemented 'BookBoon' - an innovative full-stack application enabling peer-to-peer textbook sharing across campus, reducing student costs by approximately 30%",
+        "Excelled in Data Structures and Algorithms, and participating in competitive programming challenges"
+      ]
+    },
     {
       title: "B.Tech in Computer Science",
       organization: "JNTU Hyderabad",
-      period: "June 2016 - Sep 2020",
+      period: "June 2016 - May 2020",
       location: "Hyderabad, India",
       details: "CGPA: 7.7/10.0",
       position: "right", // left side of timeline
@@ -88,7 +115,7 @@ const Experience = () => {
             <div 
               className="experience__data" 
               key={index}
-              onClick={() => openModal(item)}
+              // onClick={() => openModal(item)}
             >
               {item.position === "left" ? (
                 <>
