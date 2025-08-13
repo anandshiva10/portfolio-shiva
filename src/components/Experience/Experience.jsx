@@ -77,10 +77,10 @@ const Experience = () => {
       ]
     },
         {
-      title: "Full Stack Developer (FreeLance)",
-      organization: "VSB Infra",
-      period: "June 2020 - Feb 2021",
-      location: "Hyderabad, India",
+      title: "Java Full Stack Developer",
+      organization: "Kunj Services",
+      period: "Feb 2020 - Feb 2021",
+      location: "Remote",
       details: null,
       position: "left", // left side of timeline
       responsibilities: [
