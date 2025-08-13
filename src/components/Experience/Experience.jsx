@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 import './Experience.css';
 import Modal from './Modal'; // We'll create this component
-
+import dohLogo from '../../assets/doh.jpeg';
+import kunjLogo from '../../assets/kunj.jpeg';
+import itslogo from '../../assets/its.png';
+import ualbanyLogo from '../../assets/ualbany.png';
+import infosysLogo from '../../assets/infosys.png';
+import jntuhLogo from '../../assets/jntuh.png';
 const Experience = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
@@ -32,7 +37,8 @@ const Experience = () => {
         "Develop and optimize SAS programs to prepare datasets for various public health indicators, ensuring accuracy and reproducibility for public health reporting",
         "Source and validate primary data from official health databases (e.g., CDC, state sources), identifying discrepancies and trend changes.",
         " Collaborate with epidemiologists and other public health professionals to interpret complex health data and develop actionable insights"
-      ]
+      ],
+      logo:itslogo
     },
     {
       title: "Student Assistant",
@@ -46,7 +52,8 @@ const Experience = () => {
         "Develop and optimize SAS programs to prepare datasets for various public health indicators, ensuring accuracy and reproducibility for public health reporting",
         "Source and validate primary data from official health databases (e.g., CDC, state sources), identifying discrepancies and trend changes.",
         " Collaborate with epidemiologists and other public health professionals to interpret complex health data and develop actionable insights"
-      ]
+      ],
+      logo:dohLogo
     },
     {
       title: "M.S in Data Science",
@@ -60,7 +67,8 @@ const Experience = () => {
         "Mastered Applied Statistics fundamentals, including hypothesis testing, regression analysis, and Bayesian methods for predictive modeling and experimental design",
         "Developed a lung cancer prediction model using regression analysis and machine learning techniques, achieving 87% accuracy on validation datasets",
         "Balanced rigorous academic requirements while working as a Student Assistant at the New York State Department of Health (NYSDOH)"
-      ]
+      ],
+      logo:ualbanyLogo
     },
     {
       title: "Senior Systems Engineer",
@@ -74,10 +82,11 @@ const Experience = () => {
         "Architected Spring Boot microservices to replace monolithic message queue system, processing 3,000+ daily transactions",
         "Engineered Java-based Quartz Scheduler with RESTful API integration, eliminating licensing costs",
         "Orchestrated database migration from MySQL/WebLogic to PostgreSQL/Tomcat, reducing maintenance costs by 70%"
-      ]
+      ],
+            logo:infosysLogo
     },
         {
-      title: "Java Full Stack Developer",
+      title: "Full Stack Java Developer",
       organization: "Kunj Services",
       period: "Feb 2020 - Feb 2021",
       location: "Remote",
@@ -87,7 +96,8 @@ const Experience = () => {
         "Specialized in Software Engineering and Database Systems with a focus on advanced SQL and systems architecture",
         "Designed and implemented 'BookBoon' - an innovative full-stack application enabling peer-to-peer textbook sharing across campus, reducing student costs by approximately 30%",
         "Excelled in Data Structures and Algorithms, and participating in competitive programming challenges"
-      ]
+      ],
+                  logo:kunjLogo
     },
     {
       title: "B.Tech in Computer Science",
@@ -100,7 +110,8 @@ const Experience = () => {
         "Specialized in Software Engineering and Database Systems with a focus on advanced SQL and systems architecture",
         "Designed and implemented 'BookBoon' - an innovative full-stack application enabling peer-to-peer textbook sharing across campus, reducing student costs by approximately 30%",
         "Excelled in Data Structures and Algorithms, and participating in competitive programming challenges"
-      ]
+      ],
+      logo:jntuhLogo
     }
   ];
 
@@ -120,6 +131,16 @@ const Experience = () => {
               {item.position === "left" ? (
                 <>
                   <div data-aos="fade-right" className="experience__content custom-fade-right">
+                    <div className="experience__logo">
+                       {item.logo && (
+                          <img 
+                                src={item.logo} 
+                                alt={`${item.organization} logo`} 
+                                className="experience__logo-img"
+                                />
+                          )}
+                    </div>
+                    <div className='experience__information'>
                     <h3 className="experience__title">{item.title}</h3>
                     <span className="experience__company">{item.organization}</span>
                     <div className="experience__calendar">
@@ -131,6 +152,7 @@ const Experience = () => {
                     {item.details && (
                       <div className="experience__details">{item.details}</div>
                     )}
+                    </div>
                   </div>
 
                   <div data-aos="fade-down" >
@@ -150,6 +172,16 @@ const Experience = () => {
                   </div>
 
                   <div data-aos="fade-left" className="experience__content custom-fade-left">
+                                        <div className="experience__logo">
+                       {item.logo && (
+                          <img 
+                                src={item.logo} 
+                                alt={`${item.organization} logo`} 
+                                className="experience__logo-img"
+                                />
+                          )}
+                    </div>
+                     <div className='experience__information'>
                     <h3 className="experience__title">{item.title}</h3>
                     <span className="experience__company">{item.organization}</span>
                     <div className="experience__calendar">
@@ -158,7 +190,7 @@ const Experience = () => {
                     <div className="experience__location">
                       <i className="uil uil-location-point"></i> {item.location}
                     </div>
-
+                          </div>
                   </div>
                 </>
               )}
