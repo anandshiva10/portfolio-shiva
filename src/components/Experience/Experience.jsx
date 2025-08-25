@@ -85,27 +85,13 @@ const Experience = () => {
       ],
             logo:infosysLogo
     },
-        {
-      title: "Full Stack Java Developer",
-      organization: "Kunj Services",
-      period: "Feb 2020 - Feb 2021",
-      location: "Remote",
-      details: null,
-      position: "left", // left side of timeline
-      responsibilities: [
-        "Specialized in Software Engineering and Database Systems with a focus on advanced SQL and systems architecture",
-        "Designed and implemented 'BookBoon' - an innovative full-stack application enabling peer-to-peer textbook sharing across campus, reducing student costs by approximately 30%",
-        "Excelled in Data Structures and Algorithms, and participating in competitive programming challenges"
-      ],
-                  logo:kunjLogo
-    },
     {
       title: "B.Tech in Computer Science",
       organization: "JNTU Hyderabad",
       period: "June 2016 - May 2020",
       location: "Hyderabad, India",
       details: "CGPA: 7.7/10.0",
-      position: "right", // left side of timeline
+      position: "left", // left side of timeline
       responsibilities: [
         "Specialized in Software Engineering and Database Systems with a focus on advanced SQL and systems architecture",
         "Designed and implemented 'BookBoon' - an innovative full-stack application enabling peer-to-peer textbook sharing across campus, reducing student costs by approximately 30%",
